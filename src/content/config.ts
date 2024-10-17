@@ -10,6 +10,7 @@ const portfolio = defineCollection({
 		pubDate: z.coerce.date(),
 		updatedDate: z.coerce.date().optional(),
 		heroImage: z.string().optional(),
+		highlight: z.boolean(),
 	}),
 });
 
