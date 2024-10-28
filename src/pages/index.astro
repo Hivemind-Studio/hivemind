@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import LottieAnimation from "astro-integration-lottie/Lottie.astro";
+import LoadingHivemind from '../components/LoadingHivemind.astro';
 ---
 
 <!doctype html>
@@ -12,10 +13,10 @@ import LottieAnimation from "astro-integration-lottie/Lottie.astro";
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<Header />
-		<main>
-			<LottieAnimation src="animate/cooming-soon.json" autoplay="visible" />
+		<!-- <Header /> -->
+		<main>	
+			<LoadingHivemind/>
 		</main>
-		<Footer />
+		<!-- <Footer />git -->
 	</body>
 </html>
